@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=Efsal
+GenericName=Break Reminder
+Comment=A calm reminder to move, stretch, and hydrate
+Exec=python3 -m app
+Icon=io.github.efsal
+Terminal=false
+Categories=Utility;GTK;
+Keywords=break;reminder;health;stretch;wellness;
+StartupNotify=true
+StartupWMClass=io.github.efsal

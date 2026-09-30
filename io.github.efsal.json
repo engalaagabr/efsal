@@ -1,0 +1,42 @@
+{
+    "app-id": "io.github.efsal",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "46",
+    "sdk": "org.gnome.Sdk",
+    "command": "efsal",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=wayland",
+        "--socket=fallback-x11",
+        "--talk-name=org.gnome.Mutter.IdleMonitor",
+        "--talk-name=org.freedesktop.Notifications",
+        "--talk-name=org.freedesktop.login1"
+    ],
+    "modules": [
+        {
+            "name": "pygobject",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.gnome.org/sources/pygobject/3.48/pygobject-3.48.2.tar.xz",
+                    "sha256": ""
+                }
+            ]
+        },
+        {
+            "name": "efsal",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app --no-deps .",
+                "install -Dm644 data/io.github.efsal.desktop /app/share/applications/io.github.efsal.desktop"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
+        }
+    ]
+}
