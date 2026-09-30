@@ -90,4 +90,3 @@ Once installed, you can launch **Efsal** directly from your GNOME application me
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-# Efsal
