@@ -26,7 +26,7 @@ sudo dnf install python3 python3-pip python3-gobject gtk4 libadwaita
 
 ```bash
 # Clone the repository
-git clone https://github.com/gentlebreak/efsal.git
+git clone git@github.com:engalaagabr/efsal.git
 cd efsal
 
 # (Optional) Create a virtual environment
