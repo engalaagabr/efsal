@@ -13,46 +13,6 @@ A calm, lightweight GNOME desktop application that tracks active computer usage 
 
 ---
 
-## Overview
-
-Efsal sits quietly in the background and tracks how long you've been actively using your computer. After **45 minutes** of accumulated active time (configurable), it shows a friendly reminder to:
-
-- Stand up
-- Stretch your back
-- Drink some water
-- Rest your eyes
-
-**It only counts time you're actually using the computer.** If you step away, the timer pauses automatically and resumes when you return, using GNOME's native idle detection.
-
----
-
-## Project Structure
-
-```text
-.
-├── app/
-│   ├── __init__.py
-│   ├── __main__.py
-│   ├── application.py
-│   ├── main.py
-│   ├── models/
-│   ├── services/
-│   ├── ui/
-│   └── utils/
-├── assets/
-│   └── penguin-stretch.svg
-├── data/
-├── tests/
-├── install.sh
-├── LICENSE
-├── pyproject.toml
-├── README.md
-├── requirements.txt
-└── io.github.efsal.desktop
-```
-
----
-
 ## How to Build and Install
 
 ### Prerequisites (Fedora)
